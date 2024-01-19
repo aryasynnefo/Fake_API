@@ -1,0 +1,41 @@
+/* Updated styling for the product cart */
+.product-cart {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.product-thumbnail {
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+}
+
+.product-info {
+    flex-grow: 1;
+}
+
+.product-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.product-brand {
+    font-size: 18px;
+    color: #666;
+}
+
+.product-price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff;
+}

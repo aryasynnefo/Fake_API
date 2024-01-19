@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+    
+        <div id="products">
+
+        </div>
+
+    </div>
+    <script>let allData = [];
+
+        let s=""
+
+        for (let i = 0; i < localStorage.length; i++) {
+          let key = localStorage.key(i);
+          let value = JSON.parse(localStorage.getItem(key));
+          allData.push(value);
+        }
+        
+        
+
+        // console.log(allData);
+        console.log(allData);
+        allData.map((value)=>{
+            console.log(value.id);
+
+        s+=`
+        <div class="product-cart">
+        <img src="${value.thumbnail}" alt="Product 1" class="product-thumbnail">
+        <div class="product-info">
+            <div class="product-title">${value.title}</div>
+            <div class="product-brand">${value.brand}</div>
+        </div>
+        <div class="product-price">$${value.price}</div>
+        </div>`
+        })  
+        document.getElementById("products").innerHTML=s
+
+
+
+
+
+
+        // let data=JSON.parse(localStorage.getItem(id))
+        // console.log(data);
+    
+
+
+
+      
+        // let data=JSON.parse(localStorage.getItem(id))
+    </script>
+</body>
+</html>
